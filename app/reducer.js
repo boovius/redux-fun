@@ -1,7 +1,7 @@
 export default function reducer(state='hello ', action) {
   switch (action.type) {
     case 'WORLD':
-      return state + 'world';
+      return state + action.text;
     case 'JOSH':
       return state + 'josh';
     default:
